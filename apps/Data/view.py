@@ -25,8 +25,8 @@ from .changeDectionAlgorithm.fromUser.DL import models as changeDectionModels
 
 
 illegalRegionM=illegalRegionManage(host='127.0.0.1',port='5432',database='test',username='postgres',password='0918')
-changeDectionInstance=changeDection()#实例化变化检测对象
-landUseInstance=landUseExtract()#实例化地物提取对象
+# changeDectionInstance=changeDection()#实例化变化检测对象
+# landUseInstance=landUseExtract()#实例化地物提取对象
 '''下载影像访问队列'''
 
 def verify_tokens(token_str):

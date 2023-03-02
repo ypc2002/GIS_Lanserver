@@ -23,7 +23,7 @@ import torch.utils.data as D
 def get_args():
     parser = argparse.ArgumentParser(description='Predict masks from input images')
     parser.add_argument('--model', '-m',
-                        default='D:\\改进\\s-law-server\\Satellite-law-enforcement-Server\\apps\\Data\\LandUseAlgorithm\\fromUser\\models\\checkpoint_epoch10.pth',
+                        default='./apps/Data/LandUseAlgorithm/fromUser/models',
                         metavar='FILE',
                         help='Specify the file in which the model is stored')
     parser.add_argument('--batchSize', '-i',type=int, default=1, help='batch-size')
@@ -143,11 +143,7 @@ class models(Enum):
     '''存放模型名称、路径'''
     unetPP_building= 'unetPP'
     unetPP_building_path='apps/Data/LandUseAlgorithm/fromUser/models/checkpoint_epoch10.pth'
-    # unetPP_building_path = './models/checkpoint_epoch10.pth'   #测试路径
-    # net_water:''
-    # net_water_path:''
-    # net_plant: ''
-    # net_plant_path: ''
+
 
 
 class landUseExtract:
